@@ -12,19 +12,22 @@
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <div class="pull-right">
-        <div class="bs-example">
-          <div class="btn-group">
-            <button type="button" class="profile btn btn-danger dropdown-toggle" data-toggle="dropdown">Account</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-ref" href="<?php echo base_url('users/profile/') ?>" class="dropdown-item"><i class="glyphicon glyphicon-user"></i><strong>Profile</strong></a>
-              <br>
-              <a class="dropdown-ref" href="<?php echo base_url('auth/logout') ?>" class="dropdown-item"><i class="glyphicon glyphicon-log-out"></i><strong>Logout</strong></a>
-            </div>
+    <div class="pull-right">
+        <ul class="list-unstyled navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item avatar dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              <img src="<?php echo base_url('assets/images/img_avatar.png')?>" class="img-circle profile"
+              alt="User">
+            </a>
+         <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+          aria-labelledby="navbarDropdownMenuLink-55">
+            <a class="dropdown-item" href="<?php echo base_url('users/profile')?>"><strong><i class="glyphicon glyphicon-user"></i>Profile</strong></a><br>
+            <a class="dropdown-item" href="<?php echo base_url('auth/logout')?>"><strong><i class="glyphicon glyphicon-log-out"></i>Logout</strong></a>
           </div>
-        </div>
+          </li>
+        </ul>
       </div>
-
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
